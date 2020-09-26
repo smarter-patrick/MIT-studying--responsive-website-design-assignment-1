@@ -1,0 +1,122 @@
+<style type="text/css">
+   
+	
+	 * 	{
+		 margin:0;
+		 padding:0;
+		}
+	 
+	 .grid { display: grid;
+			grid-template-columns: 1fr 400px 400px 1fr;
+			grid-template-rows: 80px 40px 1fr 25px;
+			grid-template-areas:
+			". title title ."
+			". header header ."
+			". sidebar content ."
+			". footer footer .";
+			grid-gap: 3px;
+			text-align:center;  
+			margin-top: 10px;
+			}
+		
+	 a 		{
+			text-decoration: none;
+			}
+			
+	 .grid div:nth-child(even) {
+			background-color: white;
+			}
+	 
+	 .grid div:nth-child(odd) {
+			}
+			@media screen and (min-width:736px) {
+				". title title ."
+				". header header ."
+				". sidebar sidebar ."
+				". content content ."
+				". footer footer .";
+			}
+	
+	.title {   
+			grid-area: title;
+			height: 75px;
+			
+			}
+	.header {   
+			grid-area: header;
+			text-align:center;
+			font-family:'Oleo Script', cursive;
+			} 
+	.sidebar {   
+			grid-area: sidebar;
+			height: auto;
+			
+			}		
+	.content {   
+			grid-area: content;
+			height:auto;
+			color:rgba(119,206,215,1);
+			font-family: 'M PLUS Rounded 1c', sans-serif;	 
+			}
+
+	.footer {    
+			grid-area: footer;
+			text-align:center;
+			clear:both;
+			}		
+			
+	/* Animation of background color for main page*/		 
+	#myDIV {
+			background: red;
+			-webkit-animation: mymove 5s infinite; 
+			animation: mymove 5s infinite;
+			height:400px; width: 400px;
+			}
+			
+			@-webkit-keyframes mymove {
+			from {background-color: rgba(228,25,28,.8);}
+			to {background-color: rgba(119,206,215,.8);}
+			}		
+			
+			
+	img 	{max-height:600px;
+			max-width: 800px; 
+			}	
+
+	.logo 	{
+			max-height:200px;
+	 		max-width: 280px;
+			}
+			
+	ul 	{margin: 0px;
+			padding: 0px;
+			list-style: none; 
+			}
+	ul li	{
+			float: left;
+			width: 200.5px;
+			height: 35px;
+			background-color: black;
+			opacity:.9;
+			line-height:35px;
+			font-size:20px;
+			display: block;
+			}
+	ul li a{
+			text-decoration:none;
+			color:white;
+			display:block;
+			}
+	ul li a:hover {
+			background-color:rgba(119,206,215,1);
+	
+			}
+	ul li ul li {
+			display:none;
+			}
+	ul li:hover ul li {
+			display: block; 
+			}
+	
+	
+	</style>

@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+<meta charset="tf-8"><head>
+
+<title>business hour</title>
+<link rel="stylesheet" href="style.css">
+<!--import external font-->
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+<style>
+ .grid 	{ display: grid;
+			grid-template-columns: 1fr 400px 400px 1fr;
+			grid-template-roms: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas:
+			". title title ."
+			". header header ."
+			". sidebar sidebar ."
+			". content content ."
+			". footer footer .";
+			grid-gap: 3px;
+			text-align:center;
+			
+			}
+			 
+	p 		{text-align:left;
+			padding-left:200px ;
+			font-size: 25px;
+			} 
+</style>
+
+<body>
+	<div class="grid">
+		 <div class="title"> 
+			<img class="logo" src="logo.png" class="logo" style=" margin-left: auto; margin-right: auto; display: block;" w /> </div>
+		 
+		 <div class="header">
+			<ul> 
+				<li><a href="index.html" >home</a></li> 
+				<li><a href="about us.html">about us</a></li> 
+				<li><a href="product list.html">our product</a>
+					<ul>
+						<li><a href="product-diary.html">Art Diary </li>
+						<li><a href="product-card trading.html">Card </li>
+						<li><a href="product-paper structure.html">Paper structure </li>
+					</ul></li>
+				<li><a href="contact.html">contact</a></li>
+				</ul>
+		</div>
+		
+		<!-- display the message area for business working hour-->
+		<div class= "sidebar">
+			<h1 style="padding:35px; text-size:35px; text-align:center"><b> Business working hour
+			</b></h1>
+			<p>
+			Monday to Friday : 8 am - 7pm <br>
+			Thursday: 8am - 9pm <br>
+			Weekend: 10am - 7pm <br>
+			Holiday: closing <br>
+			</p>	
+		</div>
+		
+		 
+		<div class= "footer" style="background-image: linear-gradient(to right, red , blue);color:white;">copyright</div>
+	</div>
+
+	 
+ 
+ 
+ </div>
+ 
+</body>
+</html>

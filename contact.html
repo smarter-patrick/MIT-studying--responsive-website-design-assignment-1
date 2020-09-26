@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+<meta charset="tf-8"><head>
+<link rel="stylesheet" href="style.css"> 
+<!--import external font-->
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+<title>contact</title>
+</head>
+<style>
+ .grid 	{ display: grid;
+			grid-template-columns: 1fr 400px 400px 1fr;
+			grid-template-roms: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas:
+			". title title ."
+			". header header ."
+			". sidebar sidebar ."
+			". content content ."
+			". footer footer .";
+			grid-gap: 3px;
+			text-align:center;
+			
+			}
+			}
+	p 		{text-align:left;
+			padding:5px 25px ;
+			font-size: 18px;
+			}
+			 
+	#map	{ 
+			height: 500px;
+			weight: 100%}
+</style>
+
+<body>
+	<div class="grid">
+		 <div class="title"> <!-- logo-->
+			<img class="logo" src="logo.png" class="logo" style=" margin-left: auto; margin-right: auto; display: block;" /> </div>
+		 
+		 <div class="header"> <!-- create negivator bar-->
+			<ul> 
+				<li><a href="index.html" >home</a></li> 
+				<li><a href="about us.html">about us</a></li> 
+				<li><a href="product list.html">our product</a>
+					<ul>
+						<li><a href="product-diary.html">Art Diary </li>
+						<li><a href="product-card trading.html">Card </li>
+						<li><a href="product-paper structure.html">Paper structure </li>
+					</ul></li>
+				<li><a href="contact.html">contact</a></li>
+				</ul>
+		</div>
+				
+		<!-- display the message area-->
+		<div class= "sidebar">
+			<h1 style="padding-left:15px; text-align:center">OUR LOCTION</h1>
+			<p style="text-align:center; font-size: 25px;">400 Kent St, Sydney NSW 2000 </p>
+			<img src="map.png" alt="paper kraft map" style="align-img:center; width: 700px"/><!-- display locaition map-->
+			<br /><br /><br /> <hr />
+		 
+		 <!-- pop up the new page after click on the business hour hyperlink-->
+			<a href="business hour.html" target="_blank" ><h1 style="text-align:center; padding-left:15px">Business hour</h1>
+			</a> 
+			<br /> 
+		</div>
+		
+		 
+		<div class= "footer" style="background-image: linear-gradient(to right, red , blue);color:white;">copyright</div>
+	</div>
+
+	 
+ 
+ 
+ </div>
+ 
+</body>
+</html>

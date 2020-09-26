@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+<meta charset="tf-8"><head>
+<link rel="stylesheet" href="style.css">
+<!-- import external font--> 
+<link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+<title>Paper Kraft Assignment 1</title>
+</head>
+
+
+<body>
+	<div class="grid">
+	
+		 <div class="title"> 
+			<img class="logo" src="logo.png" class="logo" style=" margin-left: auto; margin-right: auto; display: block;" /> </div>
+		 
+		 <div class="header">
+			<ul> 
+				<li><a href="index.html" >home</a></li> 
+				<li><a href="about us.html">about us</a></li> 
+				<li><a href="product list.html">our product</a>
+					<ul>
+						<li><a href="product-diary.html">Art Diary </li>
+						<li><a href="product-card trading.html">Card </li>
+						<li><a href="product-paper structure.html">Paper structure </li>
+					</ul></li>
+				<li><a href="contact.html">contact</a></li>
+				</ul>
+		</div>
+		
+		<div class= "sidebar"> <!-- display welcome message -->
+			<div id="myDIV">
+				<h1 style="font-family:'Qwigley', cursive; font-size:95px; color: white; padding:25px 25px; font-weight:bold"> 
+				Welcome To Paper Kraft 
+				</h1>
+			</div>
+		</div>
+
+		<div class= "content">	 <!-- creating image map to link to each product session -->
+			<h2 style="text-align:center";> Floor plan</h2>     
+				<img src="Floor_plan.jpg" style=" float:center; width:420px;" usemap="floor plan" />
+				<map name="floor plan" alt="image map" >
+						<area shape="rect" coords="57,60,204,163" alt="art diary product" href="product-diary.html"/>
+						<area shape="rect" coords="261,134,413,229" alt="artist trading card product" href="product-card trading.html"/>
+						<area shape="rect" coords=" 78,225,222,323" alt="paper structure product" href="product-paper structure.html"/>
+				</map>		
+		</div>
+		  
+		<!-- footage area with css inline -->
+		<div class= "footer" style="background-image: linear-gradient(to right, red , blue);color:white;">copyright</div>
+	
+	</div>
+ 
+</body>
+</html>

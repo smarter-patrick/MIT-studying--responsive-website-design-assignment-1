@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+<meta charset="tf-8"><head>
+
+<title>our product</title>
+
+<link rel="stylesheet" href="style.css">
+<!--import external font-->
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+<style>
+			
+	h3   	{text-align:center;
+			padding-top:5px;
+			} 
+			
+	img 	{max-height:150px;
+			max-width: 250px;
+			}	 
+			
+	.card {
+			box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+			transition:	0.4s;
+			width:200px;
+			height: 250px; 
+			text-align:bottom;
+			padding :25px 2px;
+			font-size: 22px;
+			float:left; 
+			margin:30px;
+			background-color:white;
+			
+			}
+	.grid 	{display: grid;
+			grid-template-columns: 1fr 400px 400px 1fr;
+			grid-template-rows: 80px 40px 1fr 25px;   
+			grid-template-areas:
+			". title title ."
+			". header header ."
+			". sidebar sidebar ."
+			". footer footer ."; 
+			
+			}
+	.sidebar {  
+			height:400px; 
+			padding:55px 25px";
+			margin-top: 55px; 
+			background-color:rgba(119,206,215,.8);
+			font-family: 'M PLUS Rounded 1c', sans-serif;
+			}
+			
+			
+			
+</style>
+
+<body>
+	<div class="grid">
+		 <div class="title">  <!-- display logo-->
+			<img class="logo" src="logo.png" class="logo" style=" margin-left: auto; margin-right: auto; display: block;" /> 
+		</div>
+		 
+		<div class="header"> <!-- display menu bar and link-->
+			<ul> 
+				<li><a href="index.html" >home</a></li> 
+				<li><a href="about us.html">about us</a></li> 
+				<li><a href="product list.html">our product</a>
+					<ul>
+						<li><a href="product-diary.html">Art Diary </li>
+						<li><a href="product-card trading.html">Card </li>
+						<li><a href="product-paper structure.html">Paper structure </li>
+					</ul>
+					</li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</div> 
+	
+	<!-- category of all the products-->
+		<div class="sidebar" >
+			<a href="product-diary.html">
+				<div class="card">
+				<img src="AD1.jpg" alt="art diary" style="width;100%"/>
+					<h4><b>Art Diary</b></h4>
+			</div></a>
+			
+			
+			<a href="product-card trading.html"> 
+				<div class="card">
+				<img src="TC1.jpg" alt="art diary" style="width;100%"/>
+					<h4><b>Artist Trading Card</b></h4>
+			</div></a>
+			
+			
+			<a href="product-paper structure.html">
+			<div class="card">
+				<img src="AR2.jpg" alt="art diary" style="width: 120px; padding-bottom:70px"/>
+					<h4><b>Paper Structure</b></h4>
+			</div></a>
+		</div>	
+		<div class= "footer" style="background-image: linear-gradient(to right, red , blue); color:white;">copyright</div>
+			
+
+	
+	</div>
+ 
+ 
+</body>
+</html>

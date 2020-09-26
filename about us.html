@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+<meta charset="tf-8"><head>
+<title>about us</title>
+<link rel="stylesheet" href="style.css">
+<!-- import external font-->
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+<style>
+.grid 	{ display: grid;
+			grid-template-columns: 1fr 400px 400px 1fr;
+			grid-template-rows:  80px 40px 1fr25px;
+			grid-template-areas:
+			". title title ."
+			". header header ."
+			". content content ."
+			". footer footer .";
+			grid-gap: 3px;
+			text-align:center;
+			margin-top: 10px;
+
+			}
+			
+	h2   	{text-align:center;
+			padding:1	em;
+			text-shadow:1.5px 1.5px grey;
+			}
+			
+	p 		{text-align:left;
+			padding:2em;
+			font-size: 18px;
+			text-indent: 50px;
+			} 
+	.content {  
+			background-color: rgba(228,25,28,.8) ;
+			color:white;
+			
+			}
+					
+					
+</style>
+
+<body>
+	<div class="grid">
+		 <div class="title"> <!--logo area-->
+			<img class="logo" src="logo.png" class="logo" style=" margin-left: auto; margin-right: auto; display: block;" w /> </div>
+		 
+		 <div class="header"> <!-- navigation area-->
+			<ul> 
+				<li><a href="index.html" >home</a></li> 
+				<li><a href="about us.html">about us</a></li> 
+				<li><a href="product list.html">our product</a>
+					<ul>
+						<li><a href="product-diary.html">Art Diary </li>
+						<li><a href="product-card trading.html">Card </li>
+						<li><a href="product-paper structure.html">Paper structure </li>
+					</ul></li>
+				<li><a href="contact.html">contact</a></li>
+				</ul>
+		</div> 
+				 
+		<div class="content">
+		<!-- display the message area-->	
+			<h2>WE ARE PAPER KRAFT </h2>
+				<p>We are Paper Kraft Shop , small shop which sell craft's product, handmand from natural material,postcard by talented artists and paper structure to build your children imagination. 
+				</p> 	
+		<!-- our mission message-->
+			<h2>OUR MISSION</h2>
+			<p>We have variety of product which always turn among the year and sell qualified products with high standard. 
+			In addition our products been produced with heart as an ingredient and hope these product could build exceptional relationship among your family
+			</p>
+		</div> 
+		
+	<div class= "footer" style="background-image: linear-gradient(to right, red , blue);color:white;">copyright</div>
+	</div> 
+
+ 
+ 
+</body>
+</html>
